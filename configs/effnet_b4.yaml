@@ -1,0 +1,11 @@
+# E1 baseline: EfficientNet-B4 CNN with Focal Loss.
+name: effnet_b4_focal
+backbone: tf_efficientnet_b4
+image_size: 380
+batch_size: 16
+epochs: 25
+lr: 1.0e-4
+loss: focal
+focal_gamma: 2.0
+use_ben_graham: true
+use_clahe: true

@@ -1,0 +1,29 @@
+# Core DL
+torch>=2.11
+torchvision>=0.26
+timm>=1.0            # pretrained EfficientNet / ViT / Swin backbones
+
+# Data / preprocessing
+opencv-python>=4.13
+albumentations>=1.4 # training-time augmentation
+pillow>=11
+numpy>=2.0
+pandas>=2.2
+
+# Metrics / analysis
+scikit-learn>=1.5   # QWK, confusion matrix, ROC/AUC
+matplotlib>=3.9
+seaborn>=0.13
+
+# Interpretability
+grad-cam>=1.5       # optional; we also ship a minimal in-repo Grad-CAM
+
+# Demo app
+streamlit>=1.40
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.67
+
+# Dataset download
+kaggle>=1.6

@@ -1,0 +1,13 @@
+# E3: Vision Transformer (ViT-Base/16) for the CNN-vs-Transformer comparison.
+# Same data/loss/preprocessing as the CNN so the comparison is controlled;
+# only the backbone and its native 224px input differ.
+name: vit_b16_focal
+backbone: vit_base_patch16_224
+image_size: 224
+batch_size: 32
+epochs: 25
+lr: 3.0e-5
+loss: focal
+focal_gamma: 2.0
+use_ben_graham: true
+use_clahe: true

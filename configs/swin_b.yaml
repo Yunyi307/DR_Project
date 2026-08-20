@@ -1,0 +1,12 @@
+# E3 (variant): Swin-Base Transformer - hierarchical attention, a middle ground
+# between CNN locality and ViT global attention.
+name: swin_b_focal
+backbone: swin_base_patch4_window7_224
+image_size: 224
+batch_size: 24
+epochs: 25
+lr: 3.0e-5
+loss: focal
+focal_gamma: 2.0
+use_ben_graham: true
+use_clahe: true
